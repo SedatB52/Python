@@ -96,5 +96,63 @@ sozluk["s"]="SEDAT B"  # eleman değiştirme veya atama
 
 
 
+#   -------------->  set =set(liste,tuple,dic herhangi biri)
+
+
+
+
+s=set()   # set oluşturuldu
+
+
+ str="sedat başkan"
+l=[1,3,5,7,9,1]  
+
+s=set(l)# atama yapıldı
+s=set(str)
+len(s)
+s
+ısı =["sedat","bilece"]
+s=set(ısı[0])
+
+set1=set([1,4,9,7,3])
+set2=set([3,8,4,5])
+
+set1.difference(set2) #set1 in set2 den farkını verir 
+
+set1.symmetric_difference(set2) # ikisindede olan farklı elemanları veiri 
+set2-set1 # bu şekildede fark alınabilir 
+
+set1.intersection(set2)  # kesişimleri verir 
+ xxx =set1 & set2 # bu şekildede kesişim alınabilir 
+
+set1.union(set2) # birleşim 
+
+set1=set1.intersection(set2)
+
+set1.isdisjoint(set2) #kesişimleri oldugu için false döner
+
+set1.issubset(set2) #set1 set2 nin alt kümesimi diye bakar (
+
+
+
+
+
+#          ------> kapsayıcı    sıralı    değiştirilebilir <---------         #
+
+#     list=[]          yes        yes           yes
+
+#     tuple=()         yes        yes           no
+
+#     dictionary={}    yes        no            yes
+
+#     set=set()        yes        no            yes      eşşiz eleman içerir
+
+
+
+
+
+
+
+
 
 
